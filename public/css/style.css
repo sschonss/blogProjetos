@@ -36,10 +36,20 @@ header{
     border-color: #c28008;
 }
 
+.msg{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    text-align: center;
+    padding: 10x;
+    margin-bottom: 0;
+}
+
 /* NAVBAR */
 
 #navbar img {
-    width: 40px;
+    width: 120px;
     margin-left: 50px;
 }
 
@@ -62,19 +72,39 @@ header{
 /*SEARCH CONTAINER*/
 
 #search-container{
-    background-image: url(../img/banner.jpg);
+    background-image: url(/img/banner.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
-    padding: 50px;
+    height: 650px;
+    padding: 100px;
     text-align: center;
 }
 
 #search-container h1 {
-    color: #f2a340;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     margin-bottom: 30px;
     font-weight: 900;
+    
 }
+
+.seta ion-icon{
+    color: white;
+    font-size: 100px;
+    margin-top: 0%;
+}
+
+.seta h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    
+    font-weight: 900;
+}
+
+
 
 #search-container form {
     width: 50%;
@@ -102,11 +132,11 @@ header{
 }
 
 #events-container .card {
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img {
@@ -149,6 +179,59 @@ header{
     
 }
 
+#event-create-container textarea {
+    
+    font-size: 12px;
+}
+
+
+/*EVENT PAGE*/
+
+#image-container,
+#info-container{
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+   display: flex;
+}
 
 /*FOOTER*/
 
