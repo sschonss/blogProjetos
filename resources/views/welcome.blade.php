@@ -10,7 +10,7 @@
     <h2>Buscando por: {{ $search }}</h2>
     @else
     <h2>Projetos</h2>
-    
+    <br>
     @endif
     <div id="cards-container" class="row">
         @foreach($events as $event)
@@ -19,15 +19,15 @@
             <div class="card-body">
                 <p class="card-date">{{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <h5 class="card-title">{{ $event->title }}</h5>
-              
+                
                 <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
             </div>
         </div>
         @endforeach
         @if(count($events) == 0 && $search)
-            <p>Não foi possível encontrar nenhum Projeto com {{ $search }}! <a href="/">Ver todos</a></p>
+            <p>Não foi possível encontrar nenhum projeto com {{ $search }}! <a href="/">Ver todos</a></p>
         @elseif(count($events) == 0)
-            <p>Não há Projetos disponíveis</p>
+            <p>Não há projetos disponíveis</p>
         @endif
     </div>
 </div>

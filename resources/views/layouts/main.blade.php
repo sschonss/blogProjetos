@@ -23,15 +23,20 @@
             <a href="/" class="navbar-brand">
               <img src="/img/logoDocRec.jpg" alt="REC Automação">
             </a>
+            
+             
             <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="Procurar um projeto...">
     </form>
             <ul class="navbar-nav">
               
+              <div class="voltar">
+<a href="https://recautomacao.com.br/" class="nav-link"><ion-icon name="arrow-back-circle-outline"></ion-icon>Voltar para o Site</a>
+            </div>
+              @auth
               <li class="nav-item">
                 <a href="/events/create" class="nav-link">Publicar Projetos</a>
               </li>
-              @auth
               <li class="nav-item">
                 <a href="/dashboard" class="nav-link">Projetos</a>
               </li>
@@ -68,9 +73,10 @@
           </div>
         </div>
       </main>
-      <footer>
-        <p>REC Automação &copy; 2022</p>
-      </footer>
+      <footer class="text-center small tm-footer">
+          <p class="mb-0">
+          Copyright &copy; 2022 Rec Automação Industrial <p>
+        </footer>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </body>
 </html>
